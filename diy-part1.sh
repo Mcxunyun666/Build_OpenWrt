@@ -23,3 +23,8 @@ sed -i '$a src-git ifit https://github.com/kenzok8/luci-theme-ifit.git' feeds.co
 cd package
 git clone https://github.com/destan19/OpenAppFilter.git
 cd -
+
+# Delete SFE
+rm package/lean/luci-app-flowoffload -fr
+rm package/lean/shortcut-fe/ -fr
+rm package/lean/luci-app-sfe/ -fr
