@@ -28,3 +28,10 @@ cd -
 rm package/lean/luci-app-flowoffload -fr
 rm package/lean/shortcut-fe/ -fr
 rm package/lean/luci-app-sfe/ -fr
+
+# Add Argon Theme
+cd package/lean
+rm -rf luci-theme-argon
+git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
+cd ..
+cd ..
