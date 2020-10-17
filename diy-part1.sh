@@ -18,3 +18,8 @@ sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.
 sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
 sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
 sed -i '$a src-git ifit https://github.com/kenzok8/luci-theme-ifit.git' feeds.conf.default
+
+# Add OpenAppFilter
+cd package
+git clone https://github.com/destan19/OpenAppFilter.git
+cd -
