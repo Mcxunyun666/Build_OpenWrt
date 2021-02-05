@@ -19,15 +19,6 @@ sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf
 sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
 sed -i '$a src-git ifit https://github.com/kenzok8/luci-theme-ifit.git' feeds.conf.default
 
-# Add OpenAppFilter
-cd package
-git clone https://github.com/destan19/OpenAppFilter.git
-cd -
-
-# Delete SFE
-rm package/lean/luci-app-flowoffload -fr
-rm package/lean/shortcut-fe/ -fr
-rm package/lean/luci-app-sfe/ -fr
 
 # Add Argon Theme
 cd package/lean
